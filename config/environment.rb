@@ -3,6 +3,7 @@ ENV['SINATRA_ENV'] ||= "development"
 require 'bundler/setup'
 Bundler.require(:default, ENV['SINATRA_ENV'])
 
+
 def fi_check_migration
   begin
     ActiveRecord::Migration.check_pending!
