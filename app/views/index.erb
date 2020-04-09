@@ -1,0 +1,6 @@
+<form method="READ" action="/articles">   
+    <% @all_articles.map do |article| %>     
+        <%= article.title %>
+        <%= article.content %>
+    <% end %>
+</form>
